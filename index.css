@@ -1,10 +1,17 @@
+body {
+  font-family: 'Fjalla One', sans-serif;
+  '
+
+}
+
 .main-container {
   box-shadow: 2px 2px 2px lightgrey;
   width: 500px;
-  height: 400px;
+  height: 350px;
   background: darkgrey;
   border-radius: 3px;
   padding-top: 15px;
+  margin: auto;
 }
 
 .display-input {
@@ -37,6 +44,15 @@
   border: 1px solid black;
   width: 25%;
   cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.8s ease-in-out;
+}
+
+.num:hover {
+  box-shadow: 2px 2px 7px #000000db;
+  background-color: dodgerblue;
+  color: whitesmoke;
+  transform: scale(1.04);
 }
 
 .equal-sign {
@@ -51,10 +67,20 @@
   text-align: center;
 }
 
+.operator:hover {
+  box-shadow: 2px 2px 7px #000000db;
+  transform: scale(1.02);
+  background-color: dodgerblue;
+  color: whitesmoke;
+}
+
 .operator {
   padding: 15px;
   border: 1px solid black;
   cursor: pointer;
   background: whitesmoke;
   color: dodgerblue;
+  border-radius: 3px;
+  transition: all 0.8s ease-in-out;
+  transform: scale(1.02);
 }

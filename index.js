@@ -89,3 +89,14 @@ equalBtn.addEventListener('click', function() {
   }
   currentOperator = '';
 })
+
+
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    sizeVariations: 8,
+    connectParticles: true,
+    color: 626567,
+    speed: 0.7,
+  });
+};

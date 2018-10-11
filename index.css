@@ -4,14 +4,24 @@ body {
 
 }
 
+.title {
+  position: absolute;
+  z-index: 1;
+}
+
 .main-container {
   box-shadow: 2px 2px 2px lightgrey;
   width: 500px;
   height: 350px;
-  background: darkgrey;
+  background: #a9a9a9cf;
   border-radius: 3px;
   padding-top: 15px;
   margin: auto;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 15%;
+  z-index: 2;
 }
 
 .display-input {
@@ -21,6 +31,7 @@ body {
   border-radius: 2px;
   padding: 15px;
   text-align: right;
+  box-shadow: 2px 2px 2px #208ffc66;
 }
 
 .numbers-column {
@@ -75,7 +86,7 @@ body {
 }
 
 .operator {
-  padding: 15px;
+  padding: 5px;
   border: 1px solid black;
   cursor: pointer;
   background: whitesmoke;
@@ -83,4 +94,15 @@ body {
   border-radius: 3px;
   transition: all 0.8s ease-in-out;
   transform: scale(1.02);
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: whitesmoke;
 }
